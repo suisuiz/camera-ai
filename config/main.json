@@ -1,0 +1,13 @@
+{
+  "name": "火灾监测",
+  "en_name": "SmokeFireMonitoring",
+  "ignore_path": ["./test/**", "./temp/**"],
+  "entry": "index.html",
+  "assets": {
+    "app_icon": "assets/smoke.png",
+    "icon_load": "assets/loading.png"
+  },
+  "loading": {
+    "background": "#ffffff"
+  }
+}
