@@ -1,0 +1,146 @@
+@import './normalize.css';
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 清样式 */
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  user-select: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+/*:root -> 获取根元素html*/
+:root {
+  --color-text: #666;
+  --color-high-text: #ff5777;
+  --color-tint: #ff8198;
+  --color-background: #fff;
+  --font-size: 14px;
+  --line-height: 1.5;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  width: 0 !important;
+  height: 0 !important;
+  color: transparent;
+  -webkit-appearance: none;
+  background: transparent;
+}
+
+.clear-fix::after {
+  clear: both;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.clear-fix {
+  zoom: 1;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* 公共样式 */
+.app-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.app-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app-flex-align {
+  display: flex;
+  align-items: center;
+}
+
+.app-flex-item {
+  flex: 1;
+}
+
+.app-row {
+  flex-direction: row;
+}
+
+.app-column {
+  flex-direction: column;
+}
+
+.app-column-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app-column-justify {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.app-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-center {
+  text-align: center;
+}
+
+.app-inline-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.app-sider {
+  flex-shrink: 0;
+}
