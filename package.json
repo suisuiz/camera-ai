@@ -1,26 +1,35 @@
 {
-  "name": "camera_ai",
+  "name": "SmokeFireMonitoring",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "serve:smoke": "vue-cli-service serve --mode smoke",
+    "build:smoke": "vue-cli-service build --mode smoke",
+    "serve:object": "vue-cli-service serve --mode object",
+    "build:object": "vue-cli-service build --mode object",
+    "serve:people": "vue-cli-service serve --mode people",
+    "build:people": "vue-cli-service build --mode people",
+    "serve:intrusion": "vue-cli-service serve --mode intrusion",
+    "build:intrusion": "vue-cli-service build --mode intrusion",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "core-js": "^3.6.5",
+    "vant": "^2.12.48",
     "vue": "^2.6.11",
-    "vue-router": "^3.2.0",
-    "vuex": "^3.4.0"
+    "vue-router": "^3.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",
     "@vue/cli-plugin-eslint": "~4.5.13",
     "@vue/cli-plugin-router": "~4.5.13",
-    "@vue/cli-plugin-vuex": "~4.5.13",
     "@vue/cli-service": "~4.5.13",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.5",
     "eslint": "^6.7.2",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^6.2.2",
